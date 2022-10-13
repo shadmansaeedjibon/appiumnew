@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-13T09:49:26Z" name="Default suite" finished-at="2022-10-13T09:49:52Z" duration-ms="26042">
+    <groups>
+    </groups>
+    <test started-at="2022-10-13T09:49:26Z" name="Default test" finished-at="2022-10-13T09:49:52Z" duration-ms="26042">
+      <class name="Appiumnew.LongPress">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:Appiumnew.LongPress@16eccb2e]" started-at="2022-10-13T09:49:26Z" name="ConfigureAppium" finished-at="2022-10-13T09:49:39Z" duration-ms="13838" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigureAppium -->
+        <test-method signature="LongPressGesture()[pri:0, instance:Appiumnew.LongPress@16eccb2e]" started-at="2022-10-13T09:49:39Z" name="LongPressGesture" finished-at="2022-10-13T09:49:51Z" duration-ms="11450" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LongPressGesture -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Appiumnew.LongPress@16eccb2e]" started-at="2022-10-13T09:49:51Z" name="tearDown" finished-at="2022-10-13T09:49:52Z" duration-ms="740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Appiumnew.LongPress -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
