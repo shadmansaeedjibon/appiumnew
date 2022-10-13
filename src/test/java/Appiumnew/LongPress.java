@@ -30,6 +30,14 @@ public class LongPress extends BaseTest{
       
       ((JavascriptExecutor)driver).executeScript("mobile: longClickGesture", ImmutableMap.of("elementId",((RemoteWebElement)ele).getId(),"duration",4000)); //longpress
       
+      String menuText= driver.findElement(By.id("android:id/title")).getText(); //to record the text after longpress
+      Assert.assertEquals(menuText, "Sample menu"); //assetion check
+      
+      
+      Assert.assertTrue(driver.findElement(By.id("android:id/title")).isDisplayed()); //another method of assertion...u can use any of them
+      
+     
+      
       Thread.sleep(2000);
 		
 		
