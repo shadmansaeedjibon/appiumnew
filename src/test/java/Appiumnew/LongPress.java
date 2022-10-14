@@ -28,9 +28,11 @@ public class LongPress extends BaseTest{
       
       WebElement ele =driver.findElement(By.xpath("//android.widget.TextView[@text='People Names']")); //longpress
       
-      ((JavascriptExecutor)driver).executeScript("mobile: longClickGesture", ImmutableMap.of("elementId",((RemoteWebElement)ele).getId(),"duration",4000)); //longpress
+      longPressAction(ele); //this come from baseTest
       
-      String menuText= driver.findElement(By.id("android:id/title")).getText(); //to record the text after longpress
+      //((JavascriptExecutor)driver).executeScript("mobile: longClickGesture", ImmutableMap.of("elementId",((RemoteWebElement)ele).getId(),"duration",4000)); //longpress...its use in base
+      
+      String menuText= driver.findElement(By.id("android:id/title")).getText(); //to record the visible text after longpress
       Assert.assertEquals(menuText, "Sample menu"); //assetion check
       
       
