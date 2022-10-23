@@ -8,6 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import io.appium.java_client.AppiumBy;
+import io.appium.java_client.android.Activity;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 
@@ -18,10 +19,20 @@ public class MiscelaniousAppliumActions extends BaseTest{
 	
 	{
 	
-	//ConfigureAppium();// this is not needed because BaseTest has BeforeClass anotation
-	driver.findElement(AppiumBy.accessibilityId("Preference")).click();
+		
+	//app package & app activity
+		
+	// adb shell dumpsys window | find "mCurrentFocus"	//ei command run kore direct kono nirdisto page e jawa jay
+		
+	Activity activity =new Activity("io.appium.android.apis", "io.appium.android.apis.preference.PreferenceDependencies");	//direct page e jawa jay
 	
-	driver.findElement(By.xpath("//android.widget.TextView[@content-desc='3. Preference dependencies']")).click();
+	driver.startActivity(activity);//direct page e jawa jay
+	
+	Thread.sleep(15000);
+	
+	//driver.findElement(AppiumBy.accessibilityId("Preference")).click();
+	
+	//driver.findElement(By.xpath("//android.widget.TextView[@content-desc='3. Preference dependencies']")).click();
 	
 	driver.findElement(By.id("android:id/checkbox")).click(); //click on checkbox
 	
