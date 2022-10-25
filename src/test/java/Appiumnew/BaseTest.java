@@ -36,11 +36,15 @@ public void ConfigureAppium() throws MalformedURLException
 	 
 	UiAutomator2Options options =new UiAutomator2Options();
 	options.setDeviceName("Pixel 2 API 29");
-	options.setApp("C:\\Users\\shadman\\eclipse-workspace\\Appiumnew\\src\\test\\java\\resourses\\ApiDemos-debug.apk"); //ApiDemos-debug
+	
+	//options.setApp("C:\\Users\\shadman\\eclipse-workspace\\Appiumnew\\src\\test\\java\\resourses\\ApiDemos-debug.apk"); //ApiDemos-debug
+	
+	options.setApp("C:\\Users\\shadman\\eclipse-workspace\\Appiumnew\\src\\test\\java\\resourses\\General-Store.apk"); //General store
 	
 	//options.setCapability("autoGrantPermissions", "true"); //app permission remover
 	
 	 driver =new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
+	 
 	 
 	 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
