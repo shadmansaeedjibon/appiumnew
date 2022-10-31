@@ -41,6 +41,7 @@ public class eCommerce_tc_2 extends BaseTest {
 		 //driver.findElement(MobileBy.AndroidUIAutomator("")).click();
 		
 		//driver.findElement(MobileBy.AndroidUIAutomator("Bangladesh")).click();
+		//driver.findElement(MobileBy.AndroidUIAutomator("Bangladesh")).click();
 		
 		Thread.sleep(2000);
 		driver.findElement(new AppiumBy.ByAndroidUIAutomator("text(\"Argentina\")")).click();// for click Argentina
